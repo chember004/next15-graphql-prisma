@@ -6,9 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma:generate": "prisma generate --schema=./packages/db/schema.prisma"
   },
   "dependencies": {
+    "@apollo/client": "^3.12.7",
+    "@apollo/experimental-nextjs-app-support": "^0.11.8",
     "@apollo/server": "^4.11.3",
     "@as-integrations/next": "^3.2.0",
     "@prisma/client": "^6.2.1",
@@ -17,7 +20,8 @@
     "graphql-tag": "^2.12.6",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
